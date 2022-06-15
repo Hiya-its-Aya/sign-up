@@ -1,0 +1,34 @@
+/* *{ border: 1px dashed red} */
+body{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.img{
+    position: relative;
+    width:min-content
+   
+}
+
+.pic-logo{
+    position: absolute;
+    top: 30%;
+    background-color: rgba(96, 96, 96, 0.50);;
+    color: azure;
+    padding: 5% 45%
+    
+}
+
+.pic-text{
+    position: absolute;
+    bottom: 10px;
+    color: antiquewhite;
+    opacity: 40%;
+
+}
+
+img{
+    height: 100vh;
+}
