@@ -1,24 +1,49 @@
 /* *{ border: 1px dashed red} */
+
+@font-face {
+    font-family: odin-font;
+    src: url(Norse-Bold.otf);
+}
 body{
+    font-family: Arial, Helvetica, sans-serif;
     border: 0px;
     padding: 0px;
     margin: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(143, 156, 193, 0.075);
 }
 
 
-.img{
+.image{
     position: relative;
-    width:min-content
-   
+    width:min-content;
+    display: flex;
+    justify-content: center;
+}
+
+#logo-container{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 17%;
+    top: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pic-logo{
-    position: absolute;
-    top: 30%;
-    background-color: rgba(96, 96, 96, 0.50);;
-    color: azure;
-    padding: 5% 45%
-    
+    font-family: odin-font;
+    color: white;
+    font-size: 3rem;
+    padding-left: 10px;
+}
+
+.odin-logo{
+    position: relative;
+    height: 5.5rem
 }
 
 .pic-text{
@@ -26,9 +51,74 @@ body{
     bottom: 10px;
     color: antiquewhite;
     opacity: 40%;
-
 }
 
 img{
     height: 100vh;
+}
+
+.sign-up-container{
+    /* background-color: rgba(143, 156, 193, 0.075); */
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex:1;
+}
+
+.signup-text-1{
+    padding: 2rem;
+    padding-bottom: 0px;
+    font-weight: 800;
+}
+.signup-text-2{
+    padding: 2rem;   
+    font-weight: 800;
+}
+
+#signup-box{
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 4px 2px -1px rgb(168, 167, 167);
+}
+
+.form-box{
+    padding-top: .5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+label{
+    font-size: .6rem;
+    font-weight: 600;
+    
+}
+
+input{
+    position: relative;
+    width: 90%;
+    box-shadow: 1px 2px 4px 0px rgb(168, 167, 167, .8);
+    border-radius: .25rem;
+    border:.5px solid grey
+}
+
+.name-box{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+button{
+    position: relative;
+    left:2rem;
+    top:2rem;
+    width: 150px;
+    height: 40px;
+    background-color: rgba(208, 135, 67, 0.836);
+    border-radius: .25rem;
+    border: .5px solid grey;
+    color:white;
+    font-weight: 600;
+    box-shadow: 2px 3px 2px 0px rgb(168, 167, 167);
 }

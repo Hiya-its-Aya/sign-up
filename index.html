@@ -8,10 +8,59 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="img">
-        <img src="background.jpg" alt="A plane window shows a cloudy sky against the plane wing.">
-        <div class="pic-logo">Here is a Logo bsdfgbsalfbsaifghlk</div>
-        <div class="pic-text">Made by blank on blank</div>
+    <div class="image">
+        <img src="background.jpg" alt="An airplane window shows a cloudy sky under the plane wing and jet on a sunny day.">
+        <div id="logo-container"> 
+            <img class="odin-logo" src="odin-lined.png" alt="Odin Logo"> 
+            <div class="pic-logo">
+                Odin Airways </div>
+        </div>
+        <div class="pic-text">Photo by blank on blank</div>
     </div>
+    <div class="sign-up-container">
+        <div class="signup-text-1">The world is waiting. This is not a real service, but you know you need something like this in your life to help you realize your deepest dreams.</div>
+        <div class="signup-text-2">You <em>know</em> what you want to do</div>
+        <form action="#" method="post"></form>
+            <div id="signup-box">
+                <div class="form-box">
+                    <div class="name-box">
+                        <label for="firstName">FIRST NAME </label>
+                        <input type="text" id="firstName">
+                    </div>
+                    
+                    <div class="name-box">
+                        <label for="lastName">LAST NAME  </label>
+                        <input type="text" id="lastName">
+                    </div>
+                </div>
+            
+                <div class="form-box">
+                    <div class="name-box">
+                        <label for="user_email">EMAIL ADDRESS</label>
+                        <input type="email" name="email" id="user_email" placeholder="you@example.com">
+                    </div>
+
+                    <div class="name-box">
+                        <label for="user_phone">PHONE NUMBER</label>
+                        <input type="tel" id="user_phone" name="phone_number">
+                    </div>
+                </div>
+
+                <div class="form-box">
+                    <div class="name-box">
+                        <label for="user_password">PASSWORD </label>
+                        <input type="password" id="user_password" name="password">
+                    </div>
+                    <div class="name-box">
+                        <label for="confirm_password">CONFIRM PASSWORD </label>
+                        <input type="password" id="confirm_password" name="confirm_password">
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Create Acoount</button>
+        </form>
+    </div>
+
+
 </body>
 </html>
