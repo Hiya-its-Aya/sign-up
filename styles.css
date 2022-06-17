@@ -61,10 +61,11 @@ img{
 .sign-up-container{
     /* background-color: rgba(143, 156, 193, 0.075); */
     /* height: 100vh; */
-    width: 100vw;
+    /* width: 100vh; */
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: none;
     flex:1;
 }
 
@@ -151,6 +152,7 @@ button:hover{
     left: 2rem;
     top: 4rem;
     font-size: 1rem;
+    width:max-content;
 }
 
 a{
