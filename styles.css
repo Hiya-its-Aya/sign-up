@@ -101,12 +101,23 @@ label{
     
 }
 
+
 input{
     position: relative;
     width: 90%;
-    box-shadow: 1px 2px 4px 0px rgb(168, 167, 167, .8);
     border-radius: .25rem;
-    border:.5px solid grey
+    border:.5px solid grey;
+}
+
+#user_password,
+#confirm_password{
+    border: 1px solid red;
+}
+
+input:focus{
+    outline-style: none;
+    box-shadow: 1px 2px 4px 0px rgb(168, 167, 167, .8) !important;
+    border: 1.5px solid cornflowerblue !important;
 }
 
 .name-box{
@@ -127,5 +138,27 @@ button{
     border: .5px solid grey;
     color:white;
     font-weight: 600;
+    
+}
+
+button:hover{
     box-shadow: 2px 3px 2px 0px rgb(168, 167, 167);
+    background-color: rgba(208, 135, 67, 1);
+}
+
+.log-in-prompt{
+    position: relative;
+    left: 2rem;
+    top: 4rem;
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(208, 135, 67, 0.836);
+}
+
+a:hover{
+    color: rgba(208, 135, 67, 1);
+    font-weight: 700;
 }
