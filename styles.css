@@ -13,12 +13,13 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     background-color: rgba(143, 156, 193, 0.075);
+
 }
 
-
-.image{
+.image-container{
     position: relative;
     width:min-content;
+    max-width: 200%;
     display: flex;
     justify-content: center;
 }
@@ -37,7 +38,7 @@ body{
 .pic-logo{
     font-family: odin-font;
     color: white;
-    font-size: 3rem;
+    font-size: 4rem;
     padding-left: 10px;
 }
 
@@ -59,8 +60,8 @@ img{
 
 .sign-up-container{
     /* background-color: rgba(143, 156, 193, 0.075); */
-    height: 100vh;
-    
+    /* height: 100vh; */
+    width: 100vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -68,22 +69,27 @@ img{
 }
 
 .signup-text-1{
-    padding: 2rem;
+    padding: 3rem;
     padding-bottom: 0px;
     font-weight: 800;
 }
 .signup-text-2{
-    padding: 2rem;   
+    padding: 3rem;   
+    font-weight: 800;
+}
+em{
     font-weight: 800;
 }
 
 #signup-box{
     padding: 2rem;
+    padding-right: 10%;
     background-color: white;
     box-shadow: 0 4px 2px -1px rgb(168, 167, 167);
 }
 
 .form-box{
+    flex: 1;
     padding-top: .5rem;
     display: flex;
     flex-direction: row;
@@ -107,6 +113,7 @@ input{
     display: flex;
     flex-direction: column;
     padding-bottom: 1rem;
+    flex:1;
 }
 
 button{
